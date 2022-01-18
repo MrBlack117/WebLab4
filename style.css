@@ -1,0 +1,208 @@
+body {
+    background: #f6fafb;
+}
+
+div {
+    font-family: Arial;
+}
+
+.One {
+    background: #252b31;
+    color: #d49c6b;
+
+}
+
+.Two {
+    width: 25%;
+    background: #c1c8c7;
+
+}
+
+.Three {
+    width: 75%;
+    background: #d79551;
+}
+
+.Four {
+    width: 25%;
+    background: #c1c8c7;
+}
+
+.Five {
+    background: #443d2a;
+    color: #c1c8c7;
+}
+
+.Six {
+    background: #252b31;
+    color: #d49c6b;
+}
+
+.Block123456 {
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid #050814;
+
+}
+
+.Block2345 {
+    display: inline-flex;
+    flex-direction: row;
+
+}
+
+.Block235 {
+    width: 75%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.Block23 {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.textInBlockTwo{
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+.numericList{
+    display: flex;
+    flex-direction: column;
+}
+.even{
+    background: white;
+    color: black;
+}
+.odd{
+    background: black;
+    color: white;
+}
+
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+    background-color: darkgrey;
+}
+
+.tabs>div {
+    display: none;
+    border: 1px solid #eee;
+    padding: 10px 15px;
+    border-radius: 4px;
+
+}
+
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4,
+#tab-btn-5:checked~#content-5,
+#tab-btn-6:checked~#content-6,
+#tab-btn-7:checked~#content-7,
+#tab-btn-8:checked~#content-8,
+#tab-btn-9:checked~#content-9,
+#tab-btn-10:checked~#content-10 {
+    display: block;
+}
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #eee;
+    border: 1px solid transparent;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    margin-right: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.tabs>label:first-of-type {
+    margin-left: 0;
+}
+
+.work{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+}
+
+.anim{
+    flex-grow: 1;
+    width: calc(100% - 10px);
+    height: calc(100% - 50px);
+    background-image: url("Texture.png");
+    border: 5px solid orange;
+}
+
+.workDiv{
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.controlsDiv{
+    display: flex;
+    flex-direction: row;
+}
+.animDiv{
+    width: calc(100% - 10px);
+    height: calc(100% - 50px);
+    position: relative;
+    background-image: url("Texture.png");
+    border: 5px solid orange;
+}
+.redSquare{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: red;
+    top: 50%;
+
+}
+.greenSquare{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: green;
+    left: 50%;
+}

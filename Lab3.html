@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Best Page Ever</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="Block123456">
+    <div class="One">
+        <h1>This is Header</h1>
+        <p class="1" onclick="Replacement()">Text from block One</p>
+        <ul>
+            <li>
+                <a href="Lab3.html">Original</a>
+            </li>
+            <li>
+                <a href="Lab3(2).html">Copy1</a>
+            </li>
+            <li>
+                <a href="Lab3(3).html">Copy2</a>
+            </li>
+            <li>
+                <a href="Lab3(4).html">Copy3</a>
+            </li>
+            <li>
+                <a href="Lab3(5).html">Copy4</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="Block2345">
+        <div class="Block235">
+            <div class="Block23">
+                <div class="Two" onmouseover="textItalics('italics')">
+
+                    <p class="textInBlockTwo">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat luctus risus, a placerat
+                        magna euismod sed. Praesent vel molestie libero. In mollis lacinia vehicula. Donec gravida
+                        maximus nisi, ut bibendum mi rutrum vitae. Cras aliquam enim a accumsan dapibus. Morbi sem ex,
+                        porttitor in sodales non, pellentesque sit amet lacus. Nunc dolor justo, ullamcorper a leo vel,
+                        ullamcorper lacinia orci. Nam et pharetra nulla, viverra auctor ante.
+
+                        Etiam congue porta finibus. Donec dignissim lacus magna, a laoreet metus placerat sit amet.
+                        Nullam ut libero eget est mollis finibus. Integer tincidunt imperdiet condimentum. Proin cursus,
+                        sapien sit amet fringilla gravida, turpis sem blandit magna, in aliquet dui turpis in nisl.
+                        Curabitur id posuere felis. Vestibulum odio metus, auctor nec tellus et, commodo tincidunt orci.
+                        Fusce pretium lacinia mauris.
+
+                    </p>
+
+                    <form id="italicForm" hidden="true">
+                        <p><b>Залишити курсив при перезавантажені?</b></p>
+                        <p><input name="italic" type="radio" value="yes" onclick="saveFontStyle('yes')">Так</p>
+                        <p><input name="italic" type="radio" value="no" onclick="saveFontStyle('no')">Ні</p>
+
+                    </form>
+                </div>
+
+                <div class="Three">
+
+                    <div id="workDiv" class="workDiv">
+                        <div id="controlsDiv" class="controlsDiv">
+                            <button id="startDiv" onclick="animationDiv('start')">Start</button>
+                            <button id="stopDiv" hidden="true" onclick="animationDiv('stop')">Stop</button>
+                            <button id="reloadDiv" hidden="true" onclick="animationDiv('reload')">Reload</button>
+                            <button id="closeDiv" onclick="animationDiv('close')">Close</button>
+                            <p id="textMessageDiv"></p>
+                        </div>
+                        <div id="animDiv" class="animDiv">
+                            <div id="redSquare" class="redSquare"></div>
+                            <div id="greenSquare" class="greenSquare"></div>
+                        </div>
+                    </div>
+
+                    <div id="work" class="work">
+                        <div id="controls" class="controls">
+                            <button id="start" onclick="animation('start')">Start</button>
+                            <button hidden="true" id="stop" onclick="animation('stop')">Stop</button>
+                            <button hidden="true" id="reload" onclick="animation('reload')">Reload</button>
+                            <button id="close" onclick="animation('close')">Close</button>
+                            <p id="textMessage"></p>
+                        </div>
+                        <canvas id="anim" class="anim"></canvas>
+                    </div>
+
+                    <div id="BlockThreeContent" class="Three">
+
+                        <div class="tabs" id="tabs"></div>
+
+                        <img id="space"
+                             src="https://i.pinimg.com/originals/9b/98/e6/9b98e62ca0b12c77549e58e55406bf89.png"
+                             alt="Workplace" usemap="#map"
+                             width="960" height="600">
+
+                        <map name="#map">
+                            <area target="" alt="Sun" title="Sun" href="https://en.wikipedia.org/wiki/Sun"
+                                  coords="226,298,87" shape="circle">
+                            <area target="" alt="Mercury" title="Mercury"
+                                  href="https://en.wikipedia.org/wiki/Mercury_(planet)" coords="489,300,4"
+                                  shape="circle">
+                            <area target="" alt="Venus" title="Venus" href="https://en.wikipedia.org/wiki/Venus"
+                                  coords="531,301,9" shape="circle">
+                            <area target="" alt="Earth" title="Earth" href="https://en.wikipedia.org/wiki/Earth"
+                                  coords="574,301,8" shape="circle">
+                            <area target="" alt="Mars" title="Mars" href="https://en.wikipedia.org/wiki/Mars"
+                                  coords="614,301,11" shape="circle">
+                            <area target="" alt="Jupiter" title="Jupiter" href="https://en.wikipedia.org/wiki/Jupiter"
+                                  coords="682,300,25" shape="circle">
+                            <area target="" alt="Saturn" title="Saturn" href="https://en.wikipedia.org/wiki/Saturn"
+                                  coords="753,300,12" shape="circle">
+                            <area target="" alt="Uranus" title="Uranus" href="https://en.wikipedia.org/wiki/Uranus"
+                                  coords="803,301,9" shape="circle">
+                            <area target="" alt="Neptune" title="Neptune" href="https://en.wikipedia.org/wiki/Neptune"
+                                  coords="844,301,6" shape="circle">
+                        </map>
+
+                        <form id="tabsCreation" name="tabsCreationForm" onsubmit="return tabsCreator()">
+                            <label>Tabs Creator</label> <br>
+                            Введіть кількість вкладок, що потрібна (Максимум 10) <input type="number"
+                                                                                        name="numberOfTubs"
+                                                                                        id="numberOfTubs"><br>
+                            Введіть назви вкладок, через кому <input type="text" name="tubsNames" id="tubsNames"><br>
+                            <textarea name="tubsText" id="tubsText"> Введіть текст для вкладок, розділяючи текст для різних вкладок знаком % </textarea><br>
+                            <input type="submit" value="Створити">
+                        </form>
+                        Mun sed elementum nisl, non fringilla libero. Ut in ligula velit. Integer sed sem in erat
+                        placerat
+                        hendrerit sit amet id tellus. Etiam ac urna magna. Duis posuere tellus at bibendum gravida. Cras
+                        bibendum mattis ipsum et varius. Aliquam vel nibh sit amet est rhoncus fringilla at imperdiet
+                        lectus. Duis eget tortor laoreet, fermentum eros eu, congue nibh. Sed id posuere erat, sit amet
+                        dapibus ex.
+
+                        Phasellus lacinia consequat justo placerat blandit. Nunc congue sem sit amet enim sagittis, sed
+                        posuere neque dignissim. Nullam cursus vitae nibh ut volutpat. Phasellus consectetur, nulla at
+                        semper mattis, mauris sapien eleifend arcu, in suscipit sem dui in mauris. Vivamus vitae odio
+                        volutpat ipsum pharetra porta suscipit ac eros. Mauris convallis vestibulum ultricies. Etiam
+                        nisl metus, hendrerit a luctus vel, bibendum ut magna. Suspendisse tempor rhoncus ex eu euismod.
+                        Curabitur nec dignissim purus. Sed convallis sit amet nisi a feugiat. Maecenas ornare quam sed
+                        sollicitudin vestibulum. Suspendisse accumsan urna nec ligula lacinia tempor in efficitur nibh.
+                        Morbi lobortis faucibus pellentesque. Suspendisse vitae viverra lectus. Fusce sodales finibus
+                        massa eget hendrerit. Sed libero sem, ornare in eleifend a, ullamcorper eu massa.
+
+                        Morbi quis consequat orci, sed ultrices neque. Phasellus sodales ut sapien sed tempor. Nunc
+                        tempor
+                        tortor et porttitor semper. Nam varius egestas velit, at gravida orci viverra at. Integer id
+                        nunc
+                        pulvinar tortor ullamcorper fermentum. Phasellus dictum, augue in pretium congue, odio nibh
+                        luctus
+                        augue, et dapibus dui ex vitae ex. Sed nibh massa, porttitor sed nisl non, viverra consequat
+                        augue.
+                        Maecenas consectetur felis non turpis euismod suscipit. Mauris metus turpis, pharetra sit amet
+                        lorem et,
+                        posuere auctor erat. Phasellus tincidunt est quis nulla facilisis, non feugiat lorem sagittis.
+                        Vivamus
+                        blandit imperdiet est eu porttitor.
+
+                        </p>
+                        <p class="area" onclick="Area()">Click Here to see the Area</p>
+
+                        <form id="form" name="triangle" onsubmit="return triangleBuild()">
+                            <label> Can you build this Triangle?</label>
+                            <input type="text" name="firstSide" id="firstSide">
+                            <input type="text" name="secondSide" id="secondSide">
+                            <input type="text" name="thirdSide" id="thirdSide">
+                            <input type="submit" value="Submit">
+                        </form>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="Five">
+                <p>Quisque a felis interdum mauris dapibus porta ac quis urna. Quisque auctor purus nibh, a blandit sem
+                    elementum sed. Morbi at est ultrices, rutrum mi eu, laoreet mauris. Mauris porta diam ac diam
+                    sodales, et hendrerit diam varius. Cras at tortor sed nibh hendrerit sodales. Mauris interdum in
+                    ipsum ut consequat. Suspendisse pellentesque massa eget blandit tristique. Morbi vehicula magna
+                    vitae placerat ornare. Duis feugiat mi magna, ac convallis est eleifend at. Suspendisse lectus est,
+                    consequat in maximus quis, pretium vel est.
+
+                </p>
+
+            </div>
+        </div>
+        <div class="Four">
+
+            <p>
+                <a href="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D0%B4_%D0%B8_%D0%B1%D1%8D%D0%BA%D0%B5%D0%BD%D0%B4"><img
+                        src="data:image/jpeg;base64,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"
+                        width="212"
+                        height="238" width border="0" alt="Пример"></a></p>
+            <p>
+
+            <p>
+                Maecenas nibh nisl, vehicula eget viverra sit amet, elementum quis sem. Mauris porta sodales commodo.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Aliquam varius est eu posuere sagittis. In pulvinar, magna
+                non luctus ultrices, orci metus vulputate ante, et tempor risus tellus non neque. Nulla euismod quam
+                faucibus, feugiat orci ut, dictum risus. In maximus pellentesque erat, ut tempor nulla finibus vel.
+                Mauris venenatis odio commodo rutrum ultricies. Fusce condimentum porta odio. Etiam nulla justo,
+                sagittis quis malesuada eget, dapibus eget ante. Vestibulum a pharetra ligula, in hendrerit mi. Duis
+                metus massa, sollicitudin ac lectus a, luctus interdum nisl. Fusce pulvinar libero a urna volutpat, nec
+                euismod risus fermentum.
+            </p>
+
+            <button id="playAnimation" onclick="animation('show')">Play(Canvas)</button>
+            <button id="playAnimationDiv" onclick="animationDiv('show')">Play(Div)</button>
+            <div id="animationLogs"></div>
+
+            <p onclick="numericForm()"> Cтворення нумерованого списку</p>
+
+            <form hidden="true" id="numericForm" name="numericFormCreation" onsubmit="return numericListCreator()">
+                <p>Впишіть через кому всі елементи, що потрібно додати до списку</p>
+                <input type="text" name="list" id="list">
+                <input type="submit" value="Створити">
+            </form>
+
+            <ol class="numericList" id="numericList"></ol>
+            <button hidden="true" id="saveButton" onclick="listSaver()">Зберегти данні до локального сховища</button>
+
+        </div>
+
+    </div>
+    <div class="Six">
+        <h1>Footer</h1>
+        <p class="6">Some text from block Six</p>
+    </div>
+</div>
+<script src="Script.js"></script>
+<script type='text/javascript'>
+    httpRequest.onreadystatechange = () => {
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+            if (httpRequest.status === 200) {
+                let data = httpRequest.responseText.split(";");
+                data.forEach((v, index) => {
+                    if (v.startsWith("tubsHtml=")) {
+                        let html = v.substring(v.indexOf("tubsHtml=") + 9);
+                        const tabs = document.getElementById('tabs')
+                        tabs.innerHTML = html;
+                    }
+                });
+            } else {
+                alert('There was a problem with the request.');
+            }
+        }
+    };
+    httpRequest.open('GET', 'getData');
+    httpRequest.send();
+</script>
+</body>
+</html>
+
